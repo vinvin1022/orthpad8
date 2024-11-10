@@ -1,13 +1,44 @@
 {
   "expo": {
-    "scheme": "acme",
+    "name": "orthpad8",
+    "slug": "orthpad8",
+    "scheme": "orthpad8",
+    "orientation": "landscape",
+    "version": "1.0.0",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.vinvin1022.orthpad8"
+    },
     "web": {
+      "favicon": "./src/assets/favicon.png",
       "bundler": "metro"
     },
     "plugins": [
       "expo-router"
     ],
-    "name": "orthpad8",
-    "slug": "orthpad8"
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6763e838-e2e3-46eb-b36d-8446932d84eb"
+      }
+    }
   }
 }
